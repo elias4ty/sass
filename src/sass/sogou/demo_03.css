@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+  list-style-type: none;
+}
+i{
+  font-style: normal;
+}
+header,.content{
+  z-index: 10;
+  position: fixed;
+}
+html,body{
+  height: 100%;
+  background-color: #e6e6e6;
+}
+header{
+ height: 40px;
+ text-align: center;
+ color: #fff;
+ font-size: 20px;
+ background-color: #fe6847;
+ line-height: 40px;
+ width: 100%;
+}
+header a{
+ width: 40px;
+ height: 40px;
+ display: inline-block;
+ position: absolute;
+}
+header .return{
+ background: url('http://fuwu.wap.sogou.com/resource/fuwu/images/life-skin.png') no-repeat;
+ background-position: 15px 12px;
+ left: 0;
+ background-size: 17px;
+}
+header .search{
+ background: url('http://fuwu.wap.sogou.com/resource/fuwu/images/serbtn.png') no-repeat;
+ right: 40px;
+ background-position: center;
+ background-size: 17px;
+}
+header .more{
+ background: url('http://fuwu.wap.sogou.com/resource/fuwu/images/tit_ico.png') no-repeat;
+ right: 0;
+ background-size: 17px;
+ background-position: center;
+}
+.content{
+ padding-top: 40px;
+ width: 100%;
+}
+.content .tab{
+ display: table;
+ width: 100%;
+ background-color: #fff;
+ height: 40px;
+ box-sizing: border-box;
+ border-bottom: 1px solid #d5d5d5
+}
+.content .tab li{
+ display: table-cell;
+ text-align: center;
+ line-height: 40px;
+ font-size: 16px;
+ position: relative;
+}
+.active{
+ color: #fe6847;
+}
+.active::before{
+ content: '';
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 2px;
+ background-color: #fe6847;
+ position: absolute;
+}
+nav{
+ height: 32px;
+ width: 100%;
+ background-color: #f7f7f7;
+}
+nav span{
+ display: inline-block;
+ line-height: 32px;
+ font-size: 10px;
+}
+nav .address{
+ float: left;
+ margin-left: 15px;
+ color: #d1d2db;
+}
+nav .choose{
+ float: right;
+ margin-right: 12px;
+}
+nav .choose::after{
+ content: '';
+ display: inline-block;
+ margin-left: 3px;
+ vertical-align: middle;
+}
+nav .choose.down::after{
+ border: 5px solid #f7f7f7;
+ border-top: 5px solid #d1d2db;
+ margin-bottom: -6px;
+}
+nav .choose.up::after{
+ border: 5px solid #f7f7f7;
+ border-bottom: 5px solid #d1d2db;
+ margin-bottom: 6px;
+}
+.area ul{
+ display: table;
+ background-color: #fff;
+}
+.area ul li{
+ height: 42px;
+ line-height: 42px;
+ text-align: center;
+ display: table-cell;
+ width: 20%;
+ font-size: 14px;
+ float: left;
+}
+.shadow{
+  background-color: black;
+  z-index: 1;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+#list{
+  padding-top: 112px;
+  border: 8px solid #e6e6e6
+}
+#list a{
+ display: block;
+ padding: 12px 12px 10px;
+ background-color: #fff;
+ font-size: 10px;
+ color: #d1d2db;
+ text-decoration: none;
+ margin-bottom: 7px;
+ border-radius: 2px;
+}
+#list h4{
+ font-size: 16px;
+ color: #000;
+ font-weight: normal;
+}
+#list a p{
+ margin-top: 8px;
+}
+#list .detail{
+ margin-top: 10px;
+}
+#list h4{
+ display: inline;
+}
+#list .detail div{
+ color: #fe6847;
+ display: inline;
+ font-size: 20px;
+}
+#list .zuo{
+ vertical-align: text-bottom;
+ height: 15px;
+ width: 15px;
+ background: #64b482;
+ line-height: 15px;
+ text-align: center;
+ color: #fff;
+ border-radius: 3px;
+ margin-left: 5px;
+ display: inline-block;
+}
+#list .detail div i{
+  font-size: 14px;
+}
+#list .detail span:nth-child(2){
+ margin-right: 8px;
+}
+#list .detail span:nth-child(3){
+ margin-right: 4px;
+ padding-right: 6px;
+ border-right: 1px solid #d1d2db;
+}
+#list .detail span:nth-child(4){
+ margin-left: 3px;
+}

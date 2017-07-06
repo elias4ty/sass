@@ -4,11 +4,11 @@ var gulp = require('gulp');
     sass = require('gulp-sass');
 
 gulp.task('css',()=>{
-  gulp.src('./test.scss')
+  gulp.src('./test/sass/test.scss')
   .pipe(sass({outputStyle:'compressed'}))
-  .pipe(gulp.dest('css'))
+  .pipe(gulp.dest('test/static'))
 })
 
 gulp.task('watch',()=>{
-  gulp.watch('./test.scss',['css']);
+  gulp.watch('./test/sass/test.scss',['css']);
 })

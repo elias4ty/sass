@@ -1,0 +1,299 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: #e6e6e6;
+}
+ul{
+  list-style-type: none;
+  background-color: #fff;
+}
+.info{
+    width: 176px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #444;
+    margin: 0 auto;
+    position: relative;
+    top:50%;
+    margin-top: -20px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+}
+header{
+  z-index: 10;
+  height: 44px;
+  width: 100%;
+  line-height: 44px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  position: fixed;
+  background-color: #70A2F2;
+}
+header a{
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  display: inline-block;
+  background: url('http://mingyi.sogou.com/fuwu/resource/static/img/ico_spy.02808f4.png') no-repeat;
+  background-size: 100px;
+}
+header .return{
+  background-position: 15px 12px;
+  left : 0;
+}
+header .zan{
+  right: 44px;
+  background-position: 13px -170px;
+}
+header .more{
+  right: 0;
+  background-position: -72px 13px;
+}
+section{
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 13px 19px;
+}
+.detail{
+  padding-top: 44px;
+  padding-bottom: 46px;
+}
+
+.summary .up{
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d1d2db;
+  overflow: hidden;
+}
+.summary .up figure{
+  margin-right: 12px;
+  float: left;
+  margin-top: 3px;
+}
+.summary .up img{
+  width: 90px;
+  height: 67px;
+}
+.summary .up div{
+  height: 67px;
+  position: relative;
+}
+.summary .up div .title{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.summary .up .err{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: #B1B7C2;
+  font-size: 10px;
+}
+.summary .up .tag{
+  padding-top: 4px;
+  font-size: 0;
+}
+.summary .up .tag i{
+  display: inline-block;
+  background-color: #A9C6F5;
+  padding: 0 3px;
+  color: #fff;
+  font-size: 10px;
+  margin-right: 7px;
+  font-style: normal;
+  height: 16px;
+  line-height: 16px;
+}
+.summary .up .point{
+  font-size: 14px;
+  color: #B1B7C2;
+  position: relative;
+  padding-top: 7px;
+  line-height: 22px;
+}
+.summary .up .point .gray{
+  background: url('http://mingyi.sogou.com/fuwu/resource/static/img/ico_star.d7fbd96.png') repeat-x;
+  display: inline-block;
+  width: 65px;
+  height: 12px;
+  background-size: 13px;
+  margin-right: 3px;
+  background-position-y : -12px;
+}
+.summary .up .point .gold{
+  background: url('http://mingyi.sogou.com/fuwu/resource/static/img/ico_star.d7fbd96.png') repeat-x;
+  display: block;
+  width: 40%;
+  height: 12px;
+  background-size: 13px;
+}
+.summary .down{
+  margin-top : 13px;
+  height: 19px;
+}
+.summary .down address{
+  width: 85%;
+  float: left;
+  color: #B1B7C2;
+  font-size: 14px;
+  line-height: 19px;
+  border-right: 1px solid #d1d2db;
+  position: relative;
+}
+.summary .down address .location{
+  background: url('http://mingyi.sogou.com/fuwu/resource/static/img/ico_spy.02808f4.png') no-repeat;
+  background-size: 89px;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-position: 0 -63px;
+}
+.summary .down .phone{
+  background: url('http://mingyi.sogou.com/fuwu/resource/static/img/ico_spy.02808f4.png') no-repeat;
+  background-size: 100px;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-position: 0 -42px;
+  position: absolute;
+  right: 28px;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  height: 46px;
+  width: 100%;
+  background-color: #fff;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+footer ul{
+  overflow: hidden;
+}
+footer ul li{
+  width: 50%;
+  line-height: 22px;
+  text-align: center;
+  font-size: 16px;
+  color: #8E95A4;
+  float: left;
+}
+footer ul li i{
+  background: url('http://mingyi.sogou.com/fuwu/resource/static/img/ico_spy.02808f4.png') no-repeat;
+  background-size: 90px;
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+}
+footer ul li:nth-child(1){
+  position: relative;
+}
+footer ul li .i1{
+  background-position: -76px -144px;
+}
+footer ul li .i2{
+  background-position: -75px -162px;
+}
+footer ul li:nth-child(1)::after{
+    content: '';
+    width: 1px;
+    background-color: #d1d2db;
+    height: 14px;
+    position: absolute;
+    right: 0;
+    margin-top: 4px;
+}
+.tab{
+  padding: 0 19px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(209, 210, 219, 0.5);
+}
+.tab ul{
+  height: 47px;
+  width: 100%;
+  font-size: 15px;
+}
+.tab li{
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  line-height: 47px;
+  color: #B1B7C2;
+}
+.tab .cur{
+  position: relative;
+  color: #70A2F2;
+}
+.tab .cur::after{
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #70A2F2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.tab3 .forum{
+  padding: 0 19px;
+}
+.tab3 .dianping{
+  border-bottom: 1px solid rgba(209, 210, 219, 0.5);
+  font-size: 14px;
+  height: 42px;
+  width: 100%;
+  line-height: 42px;
+  position: relative;
+}
+.tab3 .dianping span em{
+  color: #FFA11F;
+  margin-right: 10px;
+}
+.tab3 .dianping cite{
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  color: #B1B7C2;
+}
+.block{
+  padding: 12px 0 8px;
+  border-bottom: 1px solid rgba(209, 210, 219, 0.5);
+}
+.block p{
+  margin: 5px 0;
+}
+.block .name{
+  margin: 0 0 12px;
+}
+.block .name img{
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.block .name span{
+    color: #8E95A4;
+    margin-left: 2px;
+    font-size: 14px;
+}
+.block .answer{
+  color: #474C57;
+}
+.block .question{
+  font-size: 14px;
+  color: #8E95A4;
+}
+.block .time{
+  color: #B1B7C2;
+  font-size: 12px;
+}
+.block .time span{
+  float: right;
+  margin-left: 15px;
+}
