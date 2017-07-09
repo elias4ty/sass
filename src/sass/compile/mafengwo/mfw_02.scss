@@ -1,0 +1,141 @@
+@import "../../common/reset","../../common/mfw_common";
+
+header{
+  height: 50px;
+
+  .logo{
+    display: inline-block;
+    width: 132px;
+    background: url($logo) no-repeat;
+    padding: 10px 15px;
+    height: inherit;
+    box-sizing: border-box;
+    background-position: 15px 12px;
+    background-size: 102px;
+  }
+  .right{
+    float: right;
+    width: 143px;
+    height: inherit;
+    font-size: 0;
+
+    span{
+      width: 93px;
+      line-height: 50px;
+      display: inline-block;
+      color: $main-color;
+      text-align: center;
+      position: relative;
+      font-size: p2r(15px);
+      vertical-align: top;
+
+      &::after{
+        content: '';
+        height: 15px;
+        width: 1px;
+        background: rgba(209, 210, 219, 0.5);
+        top:35%;
+        right: 0;
+        position: absolute;
+      }
+    }
+
+    i{
+      width: 50px;
+      background: url($back-img-01) no-repeat;
+      background-size: 100px;
+      background-position: 0 -50px;
+      display: inline-block;
+      height: inherit;
+    }
+  }
+}
+
+section.scroll{
+  height: p2r(425px);
+  background: url('https://css.mafengwo.net/mobile/images/post/note/fs-bg.png') no-repeat;
+  padding: p2r(25px) p2r(10px) 0;
+  position: relative;
+  background-size: p2r(405px);
+
+  .head{
+    margin-bottom: p2r(25px);
+    height: p2r(30px);
+    font-size: 0;
+    vertical-align: top;
+    position: relative;
+
+    .title{
+      border:{
+        left : 2px solid #fff;
+        right : 2px solid #fff;
+      }
+      overflow: hidden;
+      height: p2r(30px);
+      display: inline-block;
+      position: absolute;
+      left: 0;
+
+      ul li {
+        float: left;
+        color: #fff;
+        font-size: p2r(26px);
+        padding: 0 p2r(4px);
+        line-height: p2r(30px);
+
+        em{
+          display: block;
+          text-align: center;
+          font-size: p2r(10px);
+          color: #fff;
+          line-height: p2r(15px);
+        }
+      }
+      li:nth-child(1){
+        font-size: p2r(28px)
+      }
+      li:nth-child(2){
+        border:{
+          left : 2px solid #fff;
+          right : 2px solid #fff;
+        }
+      }
+    }
+
+    .calendar{
+      width: p2r(79px);
+      height: p2r(34px);
+      border-radius: p2r(27px);
+      background-color: #111;
+      float: right;
+      font-size: p2r(10px);
+      color: #fff;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+
+      a{
+        display: inline-block;
+        margin: p2r(5px) 0 0 p2r(15px);
+        line-height: p2r(12px);
+        position: relative;
+
+        em{
+          color: #fff;
+          display: block;
+        };
+      }
+
+      i{
+        background: url($back-img-02) no-repeat;
+        background-size: p2r(49px);
+        position: absolute;
+        top : p2r(7px);
+        right: p2r(15px);
+        height: p2r(21px);
+        width: p2r(20px);
+        display: inline-block;
+      }
+    }
+  }
+}
