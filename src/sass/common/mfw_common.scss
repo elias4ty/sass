@@ -1,0 +1,15 @@
+$back-color : #fff;
+$main-color: #ff9d00;
+$border : 1px solid rgba(209, 210, 219, 0.5);
+$main-font : 37.5px;
+$back-img-01 : 'https://css.mafengwo.net/mobile/images/header/i_head5.png';
+$back-img-02 : 'https://css.mafengwo.net/mobile/images/post/note/icon.png';
+$logo : 'https://css.mafengwo.net/mobile/images/header/logo204.png';
+
+@function p2r($px) {
+  @return ($px/$main-font) * 1rem;
+}
+
+body{
+  background-color: $back-color;
+}
