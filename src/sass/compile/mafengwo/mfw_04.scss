@@ -1,0 +1,163 @@
+@import "../../common/reset","../../common/mfw_common";
+
+@mixin i{
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  background-size: 50px;
+}
+
+header{
+  height: 49px;
+  border-bottom: $border;
+  position: relative;
+
+  .back{
+    background: url($back-img-01) no-repeat;
+    position: absolute;
+    left: 0;
+    @include i;
+    background-size: 100px;
+  }
+
+  .logo{
+    position: absolute;
+    right: 0;
+    background: url('http://css.mafengwo.net/mobile/images/header/logos100x60.png') no-repeat;
+    float: right;
+    @include i;
+    background-position: 0 10px;
+  }
+
+  div{
+    margin: 0 auto;
+    height: 50px;
+    padding: 0 75px;
+    display: flex;
+    align-items: center;
+    font-size: 0;
+
+    span{
+      height: 26px;
+      background-color: #f0f0f0;
+      display: inline-block;
+      width: 100%;
+      border-radius: 20px;
+      padding-left: 12px;
+      position: relative;
+      overflow: hidden;
+      padding-right: 36px;
+
+      i{
+        font-size: 11px;
+        color: #999;
+        overflow: hidden;
+        width: 100%;
+        line-height: 26px;
+        display: inline-block;
+        white-space: nowrap;
+      }
+    }
+    em{
+      position: absolute;
+      right: 87px;
+      height: 17px;
+      width: 17px;
+      background: url('https://css.mafengwo.net/mobile/images/header/btn_search2.png') no-repeat;
+      background-size: 17px;
+      top:17px;
+      display: inline-block;
+    }
+  }
+}
+
+section{
+  width: 100%;
+}
+
+aside{
+  width: 89px;
+  float: left;
+
+  li{
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: $border;
+
+    &.cur{
+      color: $main-color;
+      position: relative;
+
+      &::before{
+        content: '';
+        width: 4px;
+        background-color: $main-color;
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        top: 35%;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.list{
+  float: right;
+  width: p2r(284px);
+  border-left: $border;
+  overflow: auto;
+
+  .area{
+    padding-left: 15px;
+    border-bottom: $border;
+
+    &.last{
+      border-bottom: 0;
+    }
+
+    .title{
+      height: 45px;
+      color: #999;
+      font-size: 15px;
+      line-height: 45px;
+      position: relative;
+
+      i{
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        height: 38px;
+        width: 38px;
+        background: url('https://css.mafengwo.net/mobile/images/mdd/i_index.png') no-repeat;
+        background-size: 75px;
+        background-position: 3px 16px;
+      }
+    }
+
+    .table{
+      display: flex;
+      flex-wrap: wrap;
+
+      a{
+        height: p2r(113px);
+        width: p2r(74px);
+        margin-right: 15px;
+
+        ._img,img{
+          height: p2r(74px);
+          width: p2r(74px);
+        }
+
+        span{
+          font-size: 14px;
+          line-height: 39px;
+          text-align: center;
+          display: block;
+        }
+      }
+    }
+  }
+}
